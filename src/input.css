@@ -1,5 +1,6 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
 @font-face {
   font-family: "Dana";
   src: url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
@@ -52,6 +53,8 @@
   --font-MorabbaMedium: "Morabba Medium";
   --font-MorabbaLight: "Morabba Light";
   --font-MorabbaBold: "Morabba Bold";
+
+  --tracking-tightest: -0.065em;
 }
 
 @utility container {
